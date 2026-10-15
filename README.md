@@ -121,7 +121,8 @@ This is an educational linear-elastic analysis. It does **not** include member s
 ├── truss_analysis.py
 ├── truss_schema.png
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── LICENSE
 ```
 
 ## License
