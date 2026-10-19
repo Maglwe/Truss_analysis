@@ -19,7 +19,7 @@ import numpy as np
 HEIGHT = 1.5                 # Truss height (m)
 PANEL_WIDTH = 2.0            # Panel width (m)
 LOAD = 30e3                  # Downward load at B, C and D (N)
-E = 200e9                    # Young's modulus (Pa), assumed steel
+E = 210e9                    # Young's modulus (Pa), assumed steel
 AREA = 1.0e-3                # Uniform member area (m^2)
 EQUILIBRIUM_TOL = 1e-6       # Force residual tolerance (N)
 
