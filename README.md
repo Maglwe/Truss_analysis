@@ -8,7 +8,7 @@ A small educational Python project that models and performs a linear static anal
 
 ## Structural configuration
 
-The structure is a **symmetric, statically determinate, parallel-chord planar truss with vertical and inward-sloping diagonal members**. It is not intended to represent a conventional Warren truss.
+The structure is a **symmetric, statically determinate, parallel-chord planar truss with vertical and inward-sloping diagonal members**.
 
 ![Truss geometry and loading](truss_schema.png)
 
@@ -40,7 +40,6 @@ The structure is a **symmetric, statically determinate, parallel-chord planar tr
 | Material model | Linear elastic |
 | Analysis | Linear static |
 
-The material and section properties are illustrative assumptions, not verified design values.
 
 ## Features
 
@@ -66,23 +65,20 @@ The material and section properties are illustrative assumptions, not verified d
    cd Truss_analysis
    ```
 
-   Replace `YOUR_USERNAME` and `YOUR_REPOSITORY` with the actual GitHub username and repository name.
 
 2. Create and activate a virtual environment (recommended):
 
-   ```bash
-   python -m venv .venv
-   ```
-
-   Windows PowerShell:
+   On Windows using PowerShell:
 
    ```powershell
-   .\.venv\Scripts\Activate.ps1
+   py -3.12 -m venv .venv
+   .venv\Scripts\Activate.ps1
    ```
 
-   macOS/Linux:
+   On Linux or macOS:
 
    ```bash
+   python3.12 -m venv .venv
    source .venv/bin/activate
    ```
 
@@ -110,7 +106,7 @@ m+r=2j
 
 where \(m\) is the number of members, \(r\) is the number of independent support restraints, and \(j\) is the number of joints. For this model, \(17+3=2(10)\). This count is necessary but by itself is not sufficient to establish stability; stability also depends on member geometry and connectivity.
 
-The script checks global horizontal and vertical force equilibrium after analysis. These checks do not independently validate every modelling assumption or establish that the structure meets a design code.
+The script checks global horizontal and vertical force equilibrium after analysis.
 
 This is an educational linear-elastic analysis. It does **not** include member self-weight, geometric or material nonlinearity, buckling checks, connection design, serviceability criteria, or code-compliance verification. Results should not be used for construction or safety-critical design without independent engineering review.
 
