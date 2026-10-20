@@ -35,7 +35,7 @@ The structure is a **symmetric, statically determinate, parallel-chord planar tr
 
 | Parameter | Value |
 |---|---:|
-| Young's modulus, $E$ | 210 MPa |
+| Young's modulus, $E$ | 210 GPa |
 | Cross-sectional area, $A$ | $1.0 \times 10^{-3} \text{ m}^2$ |
 | Material model | Linear elastic |
 | Analysis | Linear static |
